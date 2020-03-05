@@ -4,6 +4,8 @@
   "description": "Whatsapp bot based on the Public Transit Direction Assistant - https://lara.ng ",
   "main": "src/server.js",
   "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "babel-node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
