@@ -1,0 +1,47 @@
+{
+  "name": "lara-dotng-on-whatsapp",
+  "version": "1.0.0",
+  "description": "Whatsapp bot based on the Public Transit Direction Assistant - https://lara.ng ",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ileriayo/lara-dotng-on-whatsapp.git"
+  },
+  "keywords": [
+    "lara.ng",
+    "lara",
+    "find",
+    "direction",
+    "in",
+    "lagos",
+    "get",
+    "directions",
+    "find",
+    "my",
+    "way"
+  ],
+  "author": "Ileriayo Adebiyi <ileriayoadebiyi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ileriayo/lara-dotng-on-whatsapp/issues"
+  },
+  "homepage": "https://github.com/Ileriayo/lara-dotng-on-whatsapp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ngrok": "^3.2.7",
+    "puppeteer": "^2.1.1",
+    "twilio": "^3.40.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2"
+  }
+}
