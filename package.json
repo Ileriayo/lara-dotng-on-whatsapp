@@ -33,6 +33,7 @@
   "homepage": "https://github.com/Ileriayo/lara-dotng-on-whatsapp#readme",
   "dependencies": {
     "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -41,7 +42,6 @@
     "twilio": "^3.40.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "nodemon": "^2.0.2"
