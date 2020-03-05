@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import ngrok from 'ngrok'
+// import ngrok from 'ngrok'
 
 import v1Routes from './route';
 
@@ -38,12 +38,12 @@ app.listen(PORT, async (err) => {
   if (err) console.log('Error:', err)
   console.log(`App Listening on port ${PORT}`);
 
-  try {
-    const url = await ngrok.connect(PORT);
-    console.log(`App server is publicly-accessible at ${url}`);
-  } catch (err) {
-    console.log('Ngrok Error: ', err)
-  }
+  // try {
+  //   const url = await ngrok.connect(PORT);
+  //   console.log(`App server is publicly-accessible at ${url}`);
+  // } catch (err) {
+  //   console.log('Ngrok Error: ', err)
+  // }
 });
 
 export default app;
