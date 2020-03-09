@@ -19,7 +19,7 @@ export default directionParams => {
             Info.MinFare
             } - ${
             Info.MaxFare
-            }\n\nEstimated Travel Time: ${Info.TravelTime.trim()}`;
+            }\n\nEstimated Travel Time: ${Info.TravelTime.trim()}\nPowered by lara.ng`;
         }
     }).join('');
 
