@@ -1,12 +1,18 @@
 import express from 'express';
 import cors from 'cors';
-// import ngrok from 'ngrok'
 
-import v1Routes from './route';
+/** 
+ * Uncomment this import statement to use
+ * ngrok in development environment
+ */
+// import ngrok from 'ngrok';
+
+import v1Routes from './api/route';
+import config from './config/index';
 
 const app = express();
 
-const { PORT = 3000 } = process.env;
+const { port } = config;
 
 app.use(cors());
 
@@ -34,12 +40,15 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, async (err) => {
+app.listen(port, async (err) => {
   if (err) console.log('Error:', err)
-  console.log(`App Listening on port ${PORT}`);
+  console.log(`App Listening on port ${port}`);
 
+  /**
+   * ONLY FOR DEVELOPMENT PURPOSES
+   */
   // try {
-  //   const url = await ngrok.connect(PORT);
+  //   const url = await ngrok.connect(port);
   //   console.log(`App server is publicly-accessible at ${url}`);
   // } catch (err) {
   //   console.log('Ngrok Error: ', err)
