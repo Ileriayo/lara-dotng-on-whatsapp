@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer';
 import config from '../config/index';
 
 export default async (clientRequest) => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
     const page = await browser.newPage();
     await page.setRequestInterception(true);
     page.on('request', (interceptedReq) => {
